@@ -18,7 +18,6 @@ namespace EmployeeAdminPortal.Controllers
         }
 
         [HttpGet]
-        [Route("GetAll")]
         public IActionResult GetAllEmployees()
         {
             var allEmployees = dbContext.Employees.ToList();
